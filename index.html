@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> SPV inventārs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="kreisa-puse">
+                <div class="nav-link-izskats active-nav-link">
+                    <a href="index.html">Sākums</a>
+                </div>
+                <div class="nav-link-izskats">
+                    <a href="skolas inventars.html">Skolas inventārs</a>
+                </div>
+                <div class="nav-link-izskats">
+                    <a href="skolas mape.html">Skolas karte</a>
+                </div>
+            </div>
+        
+            <div class="laba-puse">
+                <div class="firma">
+                    <a href="http://www.siguldaspv.edu.lv">SIGULDAS PILSĒTAS VIDUSSKOLA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logu-izskats">
+        <div class="logu-lietu-izskats">
+            <div class="logu-lietas-izskats">
+                <div class="logu-img-fons" style="background-image:url(logos/logo1.jpg)"></div>
+                
+                    <div class="logo-poga-izskats">
+                        <div class="text">PAR MANI</div>
+                    
+                        <div class="subtitle">
+                    Esmu skolēns, kurš mācās 11.klasē un esmu izveidojis šo mājaslapu.
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="logu-lietas-izskats">
+                <div class="logu-img-fons" style="background-image:url(logos/logo2.jpg)"></div>
+                
+                    <div class="logo-poga-izskats">
+                        <div class="text">INFO</div>
+                    
+                        <div class="subtitle">
+                    Šī mājaslapa ir paredzēta, lai atrastu, uzskaitītu un noņemtu datus.
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+            <div class="logu-lietas-izskats">
+                <div class="logu-img-fons" style="background-image:url(logos/logo3.jpg)"></div>
+                
+                    <div class="logo-poga-izskats">
+                        <div class="text">KONTAKTI</div>
+                    
+                        <div class="subtitle">
+                    e-pasts: spuravs85@gmail.com
+                    Talrunis: +37125138140
+                        </div>
+                    </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+  
+</body>
+<script>
+    const logulietas = document.querySelectorAll('.logu-lietas-izskats')
+
+    logulietas.forEach(logulieta => {
+        logulieta.addEventListener('mouseover',() => {
+            logulieta.childNodes[1].classList.add('img-darken');
+        });
+        logulieta.addEventListener('mouseout',() => {
+            logulieta.childNodes[1].classList.remove('img-darken');
+        });
+    });
+</script>
+</html>
