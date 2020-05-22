@@ -1,0 +1,174 @@
+body, html {
+    height: 110%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+#container1 {
+    min-height: 100%;
+    position: relative;
+}
+
+.tbody {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tbody td, thead th {
+    width: 140px;
+}
+
+thead th:last-child {
+    width: 156px; /* 140px + 16px scrollbar width */
+}
+
+header{
+    width: 100%;
+}
+
+.form-group {
+    font-size: 15px;
+    
+}
+
+#apskatit {
+    padding-top: 5%;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.kreisa-puse {
+    display: flex;
+}
+
+.nav-wrapper > .kreisa-puse > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-izskats {
+    height: 26px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.table {
+    width: 700px; /* 140px * 5 column + 16px scrollbar width */
+    border-spacing: 0;
+    
+}
+.laba-puse a {
+    text-decoration: none;
+    color: grey;
+    transition: color 0.5s;
+}
+
+.laba-puse a:hover {
+    color: black
+}
+.nav-link-izskats a {
+    color: #2A50D1 ;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+
+.nav-link-izskats:hover {
+    border-bottom: 1px solid #2898D4;
+}
+
+.nav-link-izskats a:hover {
+    color: #2898D4;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid #2898D4;
+}
+
+.active.nav-link a {
+    color: #2898D4 !important;
+}
+
+.logu-lietu-izskats {
+    margin-top: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.logu-lietas-izskats {
+    position: relative;
+}
+.logu-img-fons {
+    border-radius: 5%;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 1px solid transparent whitesmoke;
+
+}
+.logo-poga-izskats {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
+.inventara-ievade {
+    color: #2898D4;
+}
+
+.text1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+  color: black; 
+  position: absolute;
+  font-weight: bold;
+  padding-left: 1px;
+  width: 50%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+.logo-poga-izskats .subtitle  {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.logo-poga-izskats:hover .subtitle {
+    margin-top: 150px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+
+
+
+
